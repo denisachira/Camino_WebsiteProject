@@ -1,91 +1,77 @@
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+body {
+  background-color: rgb(193, 229, 250);
+  margin: 0;
+  padding: 0;
+}
+/* Main Header */
+header {
+  background-color: rgb(247, 236, 85);
+  color: rgb(10, 105, 248);
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  font-weight: 500;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.21);
+}
+nav {
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+nav span {
+  margin: 40px;
 }
 
-
-.header{
-    color:rgb(243, 243, 247);
-    background-color: rgb(35, 102, 245);
-    border:darkblue 1px solid;
-    position:fixed;
-    width:100%;
-    height:50px;
-    z-index: 1;
-    text-transform:uppercase;
-}
-
-.header ul{
-    position: relative;
-    top:15px;
-    left: 350px;
-}
-
-.header ul li{
-    display:inline-block;
-    width: 200px;
+a {
+  text-decoration: none;
+  color: rgb(10, 105, 248);
 }
 
 a:hover {
-    color: yellow;
-  }
-
-a{
-    text-decoration:none;
-    color:white;
+  color: blue;
+  text-transform: uppercase;
+  font-size: larger;
 }
 
-/*.wrapper{
-    width:100%;
-    margin:0 auto;
-}
-.journey-links{
-    width:100%;
-    height: 250px;
-}
-
-.journey-links div{
-    position:absolute;
-    display:inline-block;
-    width:19%;
-    height:200px;
-    margin:0 3px; 
-}*/
-
-.journey-links{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width:100%;
-    position:relative;
-    top:50px;
-
+.journey-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  top: 70px;
 }
 
-  .block{
-        align-items: center;
-        position:relative;
-        width:350px;
-        margin:15px auto; 
-  }
+.block {
+  align-items: center;
+  position: relative;
+  width: 350px;
+  margin: 15px auto;
+}
 
-  .journey-links div h3{
-      position:absolute;
-      top:10%;
-      left: 10%;
-      font-size: 40px;
-      font-weight: bold;
-      color:rgb(4, 0, 255);  
-    
-  }
+.journey-links div h3 {
+  position: absolute;
+  top: 1%;
+  left: 35%;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(240, 84, 12);
+}
 
-  .block a:hover{
-      opacity:0.5;
-  }
+.block a:hover {
+  opacity: 0.7;
+}
 
-  .journey-links .block a img{
-      border: solid 2px blue;
-
-  }
-
+.journey-links .block a img {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(107, 188, 241, 0.925);
+}
+.journey-links .block a img:hover {
+  transform: scale(1.1);
+  transition: transform 1s linear;
+}
